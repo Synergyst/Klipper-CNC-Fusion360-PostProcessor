@@ -1605,6 +1605,10 @@ function Start() {
     writeBlock(gAbsIncModal.format(90)); // Set to Absolute Positioning
     writeBlock(gUnitModal.format(unit == IN ? 20 : 21)); // Set the units
     writeBlock(mFormat.format(84), sFormat.format(0)); // Disable steppers timeout
+    writeBlock(mFormat.format(18));
+    writeBlock(gFormat.format(28), xFormat.format(0));
+    writeBlock(gFormat.format(28), yFormat.format(0));
+    writeBlock(gFormat.format(28), zFormat.format(0));
 
     if (properties.job1_SetOriginOnStart) {
       writeBlock(gFormat.format(92), xFormat.format(0), yFormat.format(0), zFormat.format(0)); // Set origin to initial position
